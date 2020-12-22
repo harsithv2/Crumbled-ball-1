@@ -13,22 +13,21 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	groundSprite=createSprite(width/2, height-35, width,10);
-	groundSprite.shapeColor=color(255)
+
 
 
 	//Create the ground here.
-	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
+	ground = Bodies.rectangle(400, 680, 800, 10 , {isStatic:true} );
 	 World.add(world, ground);
 
 
 	//Create the Bodies Here.
 
-	paper1=new Paper(200,200,20,20)
+	paper1=new Paper(100,200,20,20)
 
-box1=new Box(420,490,25,200)
-box2=new Box(490,500,200,25)
-box3=new Box(620,500,25,200)
+box1=new Box(440,580,25,200)
+box2=new Box(550,670,200,25)
+box3=new Box(640,580,25,200)
 
 
 
@@ -47,7 +46,7 @@ function draw() {
  box1.display()
  box2.display()
  box3.display()
-
+rect(ground.position.x,ground.position.y,800,10)
 
 }
 
